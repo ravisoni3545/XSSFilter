@@ -9,7 +9,7 @@ import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public final class XSSHTMLUtil {
+public final class XSSUtil {
 
     /** regex flag union representing /si modifiers in php **/
     private static final int REGEX_FLAGS_SI = Pattern.CASE_INSENSITIVE | Pattern.DOTALL;
@@ -74,7 +74,7 @@ public final class XSSHTMLUtil {
     /** Default constructor.
      *
      */
-    public XSSHTMLUtil() {
+    public XSSUtil() {
         vAllowed = new HashMap<String, List<String>>();
 
         final ArrayList<String> a_atts = new ArrayList<String>();
@@ -111,7 +111,7 @@ public final class XSSHTMLUtil {
      *
      * @param debug turn debug on with a true argument
      */
-    public XSSHTMLUtil(final boolean debug) {
+    public XSSUtil(final boolean debug) {
         this();
         vDebug = debug;
 
@@ -121,7 +121,7 @@ public final class XSSHTMLUtil {
      *
      * @param conf map containing configuration. keys match field names.
      */
-    public XSSHTMLUtil(final Map<String,Object> conf) {
+    public XSSUtil(final Map<String,Object> conf) {
 
         assert conf.containsKey("vAllowed") : "configuration requires vAllowed";
         assert conf.containsKey("vSelfClosingTags") : "configuration requires vSelfClosingTags";
