@@ -1,5 +1,3 @@
-package com.homeunion.security.filter;
-
 import java.io.IOException;
 
 import javax.servlet.Filter;
