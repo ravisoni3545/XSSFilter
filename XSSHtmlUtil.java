@@ -1,5 +1,3 @@
-package com.homeunion.common.util;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
