@@ -26,7 +26,7 @@ public class AuthenticationRequestWrapper extends HttpServletRequestWrapper{
         StringBuilder stringBuilder = new StringBuilder();
         BufferedReader bufferedReader = null;
         try {
-            // read the payload into the StringBuilder
+            // change from v1--read the payload into the StringBuilder---
             InputStream inputStream = request.getInputStream();
             if (inputStream != null) {
                 bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
