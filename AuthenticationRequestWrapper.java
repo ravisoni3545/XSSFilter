@@ -18,12 +18,6 @@ import com.common.util.XSSUtil;
 public class AuthenticationRequestWrapper extends HttpServletRequestWrapper{
     
     private String payload;
-    private String master;
-    
-    private String varv2;
-    
-    private String varv2;
-    
     public AuthenticationRequestWrapper (HttpServletRequest request) throws AuthenticationException {
         super(request);
         
