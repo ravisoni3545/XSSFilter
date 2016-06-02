@@ -22,6 +22,8 @@ public class AuthenticationRequestWrapper extends HttpServletRequestWrapper{
     
     private String varv2;
     
+    private String varv2;
+    
     public AuthenticationRequestWrapper (HttpServletRequest request) throws AuthenticationException {
         super(request);
         
