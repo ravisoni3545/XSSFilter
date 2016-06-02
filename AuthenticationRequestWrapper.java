@@ -19,7 +19,7 @@ public class AuthenticationRequestWrapper extends HttpServletRequestWrapper{
     
     private String payload;
     
-    private String tempVar;
+    private String temp;
     
     public AuthenticationRequestWrapper (HttpServletRequest request) throws AuthenticationException {
         super(request);
